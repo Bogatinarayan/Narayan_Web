@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Naryan social media</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-image: url("logoofproject.jpg");
+            background-color: rgb(209, 191, 194);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            height: 50px;
+            padding: 0 20px;
+            border-radius: 3px;
+
+          
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+    
+        }
+
+        .navbar .logo {
+            margin-right: 20px;
+        }
+
+        .navbar .logo img {
+            width: 30px;
+            height: 30px;
+            border-radius: 10px;
+        }
+
+        .navbar .menu {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            background-color:green;
+            border-radius:10px;
+            
+        }
+
+        .navbar .menu a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .navbar .menu a:hover {
+            text-decoration: underline;
+        }
+
+        .navbar .actions {
+            display: flex;
+            background-color: green;
+            border-radius: 10px;
+        }
+
+        .navbar .actions a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .navbar .actions a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-height: 500px;
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: #ddd #fff;
+        }
+
+        .image-container::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .image-container::-webkit-scrollbar-thumb {
+            background-color: #ddd;
+            border-radius: 4px;
+        }
+
+        .image-container::-webkit-scrollbar-track {
+            background-color: #fff;
+        }
+
+        .image-card {
+            width: 22%;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .image-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .image-actions {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #f0f2f5;
+        }
+
+        .image-actions button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            margin-right: 10px;
+            font-weight: bold;
+            color: #555;
+            display: flex;
+            align-items: center;
+        }
+
+        .image-actions button:hover {
+            color: #3b5998;
+        }
+
+        .image-actions button .like-icon {
+            margin-right: 5px;
+        }
+
+        .like-count {
+            margin-right: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Footer Styles */
+        .footer {
+            
+            padding: 20px;
+            position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #1f1818;
+  
+  text-align: center;
+
+
+        }
+
+        .footer-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .footer-content ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .footer-content ul li {
+            margin-right: 15px;
+        }
+
+        .footer-content ul li a {
+            color: #4a4a4a;
+            text-decoration: none;
+        }
+
+        .footer-bottom {
+            margin-top: 20px;
+            color: #8b8d92;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        /* Media Queries */
+        @media only screen and (max-width: 768px) {
+            .image-card {
+                width: 48%;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .image-card {
+                width: 100%;
+            }
+        }
+/* This css is for welcome to my webpage h1*/
+.welcomeh1 {
+
+    color: #738fbd;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/*  This is css of the video which is at the top of the website */
+video {
+  width: 100%;
+}
+
+.video-controls {
+  margin-top: 10px;
+}
+
+button {
+  margin-right: 5px;
+}
+
+.learn_data_base{
+   background-color: antiquewhite;
+   justify-content: center;
+   text-align: center;
+   background-image: url("pexels-photo-96627");
+   border-radius: 20px;
+
+}
+.database_liitem{
+  color:#3b5998;
+  border-radius: 50px;
+  background-color: aqua;
+
+
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="smalllogo.jpg" alt="perosal  Logo">
+        </div>
+        <div class="menu">
+            <a href="NarayanBogatiproject.html">Home</a>
+            <a href="About_us.html">About US</a>
+            <a href="#">Pages</a>
+            <a href="#">Groups</a>
+        </div>
+        <div class="actions">
+            <a href="Contacts.html">Contacts</a>
+            <a href="Our_location.html">Location</a>
+        </div>
+    </div>
+<br>
+<br>
+<hr>
+<h1 class="welcomeh1">Welcome to my Website</h1>
+
+   <div>
+    <video id="myVideo" controls autoplay>
+        <source src="20210408_145253.mp4" type="video/mp4">
+        <!-- Add additional source elements for different video formats if needed -->
+        Your browser does not support the video tag.
+      </video>
+    
+      
+</div>
+
+
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="image-container">
+            <!-- Add more image cards -->
+             <!-- Image 1 -->
+             <!-- test this for click -->
+  <div class="image-card"> <a href="cprogrammingproject.html"><img src="cprogramming22.png" alt="Image 1"></a>
+    <div class="image-actions">
+        <button id="like-button-1" onclick="likeImage(1)" class="like-button">
+            <span class="like-icon">❤️</span>Like
+        </button>
+        <span id="like-count-1" class="like-count">0</span> Likes
+    
+        
+    </div>
+</div>
+<!-- Add more image cards with the same structure -->
+ <!-- Image 2 -->
+ <!-- This image is for java script
+-->
+ 
+ <div class="image-card">  
+    <img src="javasscriptpic.jpg" alt="Image 1">
+    <div class="image-actions">
+        <button id="like-button-1" onclick="likeImage(1)" class="like-button">
+            <span class="like-icon">❤️</span>Like
+        </button>
+        <span id="like-count-1" class="like-count">0</span> Likes
+    </div>
+</div>
+<!-- Add more image cards with the same structure -->
+
+ <!-- Image 3 -->
+ <div class="image-card">  
+    <img src="htmllpic8r.png" alt="Image 1">
+    <div class="image-actions">
+        <button id="like-button-1" onclick="likeImage(1)" class="like-button">
+            <span class="like-icon">❤️</span>Like
+        </button>
+        <span id="like-count-1" class="like-count">0</span> Likes
+    </div>
+</div>
+<!-- Add more image cards with the same structure -->
+
+ <!-- Image 4 -->
+ <div class="image-card">  
+    <img src="csspic3.jpg" alt="Image 1">
+    <div class="image-actions">
+        <button id="like-button-1" onclick="likeImage(1)" class="like-button">
+            <span class="like-icon">❤️</span>Like
+        </button>
+        <span id="like-count-1" class="like-count">0</span> Likes
+    </div>
+</div>
+<!-- Add more image cards with the same structure -->
+
+
+        </div>
+    </div>
+<a href="projectmedia.html">My Media </a>
+<a href="test.html">Test youe project </a>
+
+<h1 class="learn_data_base"> Lear Data Base</h1>
+<ul class="database_liitem"> 
+<li class="first5">SQL</li>
+<li class="second5">MY SQL</li>
+<li class="third5">PHP</li>
+
+
+</ul>
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+                <li><a href="#">Ads Info</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+            <div class="footer-bottom">
+                <span>&copy; 2023 Facebook</span>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // JavaScript code to handle like functionality
+        function likeImage(imageId) {
+            const likeButton = document.getElementById(`like-button-${imageId}`);
+            const likeCount = document.getElementById(`like-count-${imageId}`);
+
+            let count = parseInt(likeCount.textContent);
+            if (likeButton.classList.contains('liked')) {
+                likeButton.classList.remove('liked');
+                count--;
+            } else {
+                likeButton.classList.add('liked');
+                count++;
+            }
+            likeCount.textContent = count;
+        }
+
+
+/* This script is for video which is at the top */
+var video = document.getElementById("myVideo");
+var playBtn = document.getElementById("playBtn");
+var pauseBtn = document.getElementById("pauseBtn");
+var skipBtn = document.getElementById("skipBtn");
+
+playBtn.addEventListener("click", function() {
+  video.play();
+});
+
+pauseBtn.addEventListener("click", function() {
+  video.pause();
+});
+
+skipBtn.addEventListener("click", function() {
+  video.currentTime += 10; // Skips forward by 10 seconds
+});
+
+
+    </script>
+</body>
+</html>
